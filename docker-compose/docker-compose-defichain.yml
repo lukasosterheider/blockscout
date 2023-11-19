@@ -48,6 +48,8 @@ services:
         ETHEREUM_JSONRPC_TRACE_URL: http://defid:8551/
         # ETHEREUM_JSONRPC_WS_URL: ws://defid:8545/
         CHAIN_ID: '1130'
+        ETHEREUM_JSONRPC_USER: defid-user
+        ETHEREUM_JSONRPC_PASSWORD: mfemrkn564kjnfg34
 
   visualizer:
     extends:
