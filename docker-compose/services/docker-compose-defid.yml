@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  defid:
+    image: defi/defichain:4.0.1
+    pull_policy: always
+    restart: always
+    stop_grace_period: 5m
+    container_name: 'defid'
+    command: defid -rpcallowip=172.19.0.0/16 -rpcbind=0.0.0.0 -rpcuser=defid-user -rpcpassword=mfemrkn564kjnfg34
+    volumes:
+      - /home/defichain/defid-data:/data
