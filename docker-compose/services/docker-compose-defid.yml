@@ -7,6 +7,6 @@ services:
     restart: always
     stop_grace_period: 5m
     container_name: 'defid'
-    command: defid -rpcallowip=172.19.0.0/16 -rpcbind=0.0.0.0 -rpcuser=defid-user -rpcpassword=mfemrkn564kjnfg34
+    command: defid -rpcallowip=172.24.0.0/16 -rpcbind=0.0.0.0 -wsbind=0.0.0.0 -grpcbind=0.0.0.0 -ethrpcbind=0.0.0.0 -rpcuser=defid-user -rpcpassword=mfemrkn564kjnfg34
     volumes:
       - /home/defichain/defid-data:/data
