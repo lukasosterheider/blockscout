@@ -40,13 +40,13 @@ services:
         CACHE_TOTAL_GAS_USAGE_COUNTER_ENABLED: ""
         CACHE_ADDRESS_WITH_BALANCES_UPDATE_INTERVAL: ""
         ADMIN_PANEL_ENABLED: ""
-        RELEASE_VERSION: 5.3.1
+        RELEASE_VERSION: 5.3.2
     links:
       - db:database
     environment:
         ETHEREUM_JSONRPC_HTTP_URL: http://defid:8551/
         ETHEREUM_JSONRPC_TRACE_URL: http://defid:8551/
-        # ETHEREUM_JSONRPC_WS_URL: ws://defid:8545/
+        ETHEREUM_JSONRPC_WS_URL: ws://defid:8545/
         CHAIN_ID: '1130'
         ETHEREUM_JSONRPC_USER: defid-user
         ETHEREUM_JSONRPC_PASSWORD: mfemrkn564kjnfg34
