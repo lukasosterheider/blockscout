@@ -14,4 +14,4 @@ services:
       -  ../envs/common-blockscout.env
     volumes:
       - ./logs/:/app/logs/
-      - ../images/:/custom-resources/images
+      - ../images/:/app/lib/block_scout_web-5.3.1/priv/static/images/custom
